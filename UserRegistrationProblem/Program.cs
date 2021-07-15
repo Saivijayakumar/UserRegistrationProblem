@@ -10,8 +10,8 @@ namespace UserRegistrationProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("------>Welcome To Regex Programs<----------");
-            RegexProblems.ValidateingFirstName();
+            Console.WriteLine("\t\t------>Welcome To Regex Programs<----------\n");
+            RegexProblems.ValidateingLastName();
             Console.ReadLine();
         }
     }

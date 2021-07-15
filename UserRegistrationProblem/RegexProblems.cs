@@ -72,5 +72,25 @@ namespace UserRegistrationProblem
             }
 
         }
+        public static void ValidateingPhoneNumber()
+        {
+            //array for list of Numbers
+            string[] mobileNumber = { "91 9866201443", "21 9876543210", "3 7095821", "07 7095821264", "5 8897023502", "67 1234567890" };
+            //regex pattern for Number
+            string s = @"^[1-9]{2}[ ][0-9]{10}$";
+            Regex regex = new Regex(s);
+            foreach (string i in mobileNumber)
+            {
+                Match res = regex.Match(i);
+                if (res.Success)
+                {
+                    Console.WriteLine($"Valid --> {i}");
+                }
+                else
+                {
+                    Console.WriteLine($"InValid --> {i}");
+                }
+            }
+        }
     }
 }

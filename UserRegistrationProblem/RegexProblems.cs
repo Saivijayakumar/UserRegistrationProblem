@@ -11,7 +11,7 @@ namespace UserRegistrationProblem
     {
         public static void ValidateingFirstName()
         {
-            string[] firstName = { "Sai", "Vijaya", "Kumar", "Ram", "ram", "sai", "Sa", "1sa", " Sai", "kFc" };
+            string[] firstName = { "Sai", "Vijaya", "Kumar", "Ram", "123", "sai", "Sa", "1sa", " Sai", "kFc" };
             string s = @"^[A-Z]{1}[a-z]{2,}";
             Regex regex = new Regex(s);
 

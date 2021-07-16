@@ -94,9 +94,9 @@ namespace UserRegistrationProblem
         }
         public static void ValidateingPassword()
         {
-            //array for list of Numbers
+            //array for list of passwords
             string[] password = { "awsvWf&2", "abcQ*d", "sfls@9", "hhfeY&fd2k", "Bran*ra8f" };
-            //regex pattern for Number
+            //regex pattern for Passwords
             string s = @"^[a-z]*[A-Z][a-z]*.[a-z]*[0-9][a-z]*$"; 
             Regex regex = new Regex(s);
             foreach (string i in password)

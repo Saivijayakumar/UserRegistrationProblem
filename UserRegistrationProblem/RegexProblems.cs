@@ -92,5 +92,25 @@ namespace UserRegistrationProblem
                 }
             }
         }
+        public static void ValidateingPassword()
+        {
+            //array for list of Numbers
+            string[] password = { "awsvWf&2", "abcQ*d", "sfls@9", "hhfeY&fd2k", "Bran*ra8f" };
+            //regex pattern for Number
+            string s = @"^[a-z]*[A-Z][a-z]*.[a-z]*[0-9][a-z]*$"; 
+            Regex regex = new Regex(s);
+            foreach (string i in password)
+            {
+                Match res = regex.Match(i);
+                if (res.Success)
+                {
+                    Console.WriteLine($"Valid --> {i}");
+                }
+                else
+                {
+                    Console.WriteLine($"InValid --> {i}");
+                }
+            }
+        }
     }
 }

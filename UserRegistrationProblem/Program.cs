@@ -11,7 +11,7 @@ namespace UserRegistrationProblem
         static void Main(string[] args)
         {
             Console.WriteLine("\t\t------>Welcome To Regex Programs<----------\n");
-            RegexProblems.ValidateingEmail();
+            RegexProblems.ValidateingPassword();
             Console.ReadLine();
         }
     }
